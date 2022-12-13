@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin User</title>
+</head>
+<style>
+    .Delete{
+        margin: 20px;
+        margin-top: 70px;
+    }
+
+    .Check{
+        margin: 20px;
+    }
+</style>
+<body>
+    <div align="">
+      <div class ="Check">
+
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+            <input type="hidden" name = "choose" value="seeUserList">
+            <input type="submit" value="check user">
+        </form>
+          <br>
+
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+            <input type="hidden" name = "choose" value="seeOrganizationList">
+            <input type="submit" value="check organization">
+        </form>
+          <br>
+
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+          <input type="hidden" name = "choose" value="seeCompanyList">
+          <input type="submit" value="check all company" name="check">
+        </form>
+          <br>
+
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+            <input type="hidden" name = "choose" value="seeActionCompanyList">
+            <input type="submit" value="check action company" name="check">
+        </form>
+          <br>
+
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+            <input type="hidden" name = "choose" value="seeInactionCompanyList">
+            <input type="submit" value="check inaction company" name="check">
+        </form>
+
+      </div>
+
+    </div>
+    <div class="Delete">
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+            <input type="hidden" name = "choose" value="deleteUser">
+            <input type="submit" value="delete user">
+        </form>
+
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+            <input type="hidden" name = "choose" value="deleteOrganization">
+            <input type="submit" value="delete organization">
+        </form>
+
+        <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_admin" method="post">
+            <input type="hidden" name = "choose" value="deleteCompany">
+            <input type="submit" value="delete company" name="check">
+        </form>
+    </div>
+</body>
+</html>

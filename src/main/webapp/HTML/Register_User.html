@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+    .login {
+        margin-right: 340px;
+    }
+    .pas {
+        margin: -40px;
+        margin-left: 300px;
+    }
+    .mail{
+        margin: 70px;
+    }
+</style>
+<body>
+<div align="center">
+
+    <h1>Register</h1>
+    <br><br><br><br>
+
+    <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/register" method="POST">
+
+    <div class="login">
+        <label>Login</label><br>
+        <input type="text" name = "log">
+    </div>
+
+    <div class="pas">
+        <label>Password</label><br>
+        <input type="text" name = "pas">
+    </div>
+
+    <div class="mail">
+        <label>Email</label><br>
+        <input type="text" name="mail">
+    </div>
+
+    <div class = "Sub">
+        <input type="submit" name="sub" value="Зарегистрироваться">
+    </div>
+        <input type="hidden" name="chooser" value="user">
+    </form>
+
+</div>
+</body>
+</html>

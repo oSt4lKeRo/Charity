@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    .menu{
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+
+<div align="left" class="menu">
+    <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_user" method="post">
+        <input type="hidden" name = "choose" value="seeCompany">
+        <input type="submit" value="check your donate">
+    </form>
+    <br>
+
+    <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_user" method="post">
+        <input type="hidden" name = "choose" value="deleteAccount">
+        <input type="submit" value="delete your account">
+    </form>
+    <br>
+
+    <form action="http://localhost:8080/Charity-1.0-SNAPSHOT/controller_user" method="post">
+        <input type="hidden" name="choose" value="changePassword">
+        <input type="text" name="password">
+        <input type="submit" value="Change password">
+    </form>
+
+</div>
+
+</body>
+</html>
