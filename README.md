@@ -12,6 +12,7 @@
 * GlassFish 6.2.5;
 * PostgreSQL 15;
 * IntelliJ IDEA 2022.2.5.
+* MVC паттерн
 
 Скриншоты:
 Меню пользователя
